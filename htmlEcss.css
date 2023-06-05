@@ -1,0 +1,20 @@
+/** {
+  background-color: rgb(92, 11, 132);
+}*/
+#lista1 {
+  list-style-type: square;
+  color: #0000ff;
+  background-color: blueviolet;
+}
+
+#lista2 {
+  list-style-type: upper-roman;
+  color: #0000ff;
+  background-color: aqua;
+}
+
+.desafio1,
+.desafio2 {
+  color: orange;
+  background-color: darkgreen;
+}

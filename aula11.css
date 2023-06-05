@@ -1,0 +1,88 @@
+div {
+  background-color: coral;
+  display: inline-flex;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.texto1:hover {
+  background-color: blueviolet;
+}
+
+.texto2:hover {
+  background-color: turquoise;
+}
+
+.texto3:hover {
+  background-color: crimson;
+}
+
+/*:first-child:hover {
+  background-color: blue;
+}
+
+#lista1:last-child:hover {
+  color: blueviolet;
+}
+
+#lista2:nth-child(4) {
+  color: darkorange;
+}*/
+
+/*PseudoElementos sempre usa ::*/
+
+p::first-letter {
+  color: cornflowerblue;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#paragrafo1::before {
+  content: "Inicio do paragrafo";
+  color: green;
+}
+#paragrafo2::after {
+  content: "Final do paragrafo";
+  color: red;
+}
+
+p::first-line {
+  background-color: darkgoldenrod;
+}
+
+p::selection {
+  color: rgb(192, 180, 9);
+  background-color: chocolate;
+}
+
+ol::marker:hover {
+  color: rgb(209, 37, 137);
+  font-size: 2em;
+}
+
+/*Pseudo-Classes Estruturais*/
+li:first-child {
+  background-color: blueviolet;
+}
+
+li:nth-child(2) {
+  background-color: gold;
+}
+
+ul:first-of-type {
+  color: blue;
+}
+
+li:nth-of-type(even) {
+  color: rgb(62, 240, 8);
+}
+
+ol:last-of-type {
+  color: brown;
+}
+
+li:not(2) {
+  color: rgb(62, 240, 8);
+}

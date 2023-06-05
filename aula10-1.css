@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+}
+.div1 {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  border: inset 5px sienna;
+  border-radius: 5%;
+  color: whitesmoke;
+  /*Esse codigo abaixo funcionou para centralizar o - 
+   texto na div =)*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*tentei e o tamanho da div mudou :(
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+*/
+
+  /*tentei mas a div inteira foi para o centro-
+  do body :(
+  height: 10em;
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+*/
+}
+
+.div2 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  border: inset 5px rgb(163, 17, 221);
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div3 {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  border: inset 5px rgb(25, 192, 221);
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
