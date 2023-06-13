@@ -1,0 +1,89 @@
+/*Gradientes podem ser aplicados nas 4 direcoes.
+Por padrao inicia no topo*/
+#caixa1 {
+  background: linear-gradient(tan, red, teal);
+  height: 200px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*Translate muda a posicao do objeto nos eixos x,y*/
+  transform: translate(310px, 40px);
+}
+
+/*Gradiente pode ser definido por graus de inclinacao*/
+#caixa2 {
+  background: linear-gradient(45deg, tan, red, teal, blue);
+  height: 200px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*Transformacao rotacao nos eixo z*/
+  transform: rotatez(60deg);
+}
+
+/*Gradiente radial, inicia a cor no centro e 
+expande para outras cores.*/
+#caixa3 {
+  background: radial-gradient(
+    rgb(247, 6, 46),
+    rgb(0, 26, 255),
+    rgb(0, 255, 179)
+  );
+  height: 200px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*Transformacao rotacao eixo x*/
+  transform: rotatex(180deg);
+}
+
+/*Gradiente linear para a direita*/
+#caixa4 {
+  background: linear-gradient(to right, tan, red, teal);
+  height: 200px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*Transformacao rotacao no eixo y*/
+  transform: rotatey(180deg);
+}
+
+/*Gradiente linear para a esquerda*/
+#caixa5 {
+  background: linear-gradient(to left, tan, red, teal);
+  height: 200px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*Transformacao rotacao sem declarar o eixo, ele assume o eixo z*/
+  transform: rotate(60deg);
+}
+
+/*Gradiente linear para cima*/
+#caixa6 {
+  background: linear-gradient(to top, tan, red, teal);
+  height: 200px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Gradiente linear usando graus*/
+#caixa7 {
+  background: linear-gradient(120deg, tan, red, teal);
+  height: 200px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

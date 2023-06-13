@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  /*height: 700px;*/
+  flex-direction: column;
+  font-family: "Franklin Gothic, serif";
+  border: 3px solid black;
+  align-items: stretch;
+}
+
+#main {
+  display: flex;
+  height: 100%;
+  width: auto;
+}
+
+header,
+footer {
+  height: 200px;
+}
+
+aside,
+nav {
+  width: 20%;
+}
+aside {
+  order: 1;
+}
+
+article {
+  width: 60%;
+}
+
+article,
+nav,
+aside,
+header,
+footer {
+  background-color: antiquewhite;
+  padding: 1px;
+  margin: 1px;
+  border: 3px solid black;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  border-top: solid;
+  border-bottom: solid;
+}

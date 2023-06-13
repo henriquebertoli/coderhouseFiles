@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="aula11-2.css" />
+    <title>Pseudo-Classes de Validacao</title>
+  </head>
+  <body>
+    <form id="formulario" action="" id="formulario">
+      <label for="nome">Nome : </label>
+      <input required type="text" name="nome" id="nome" placeholder="Nome" />
+      <br />
+      <label for="idade">Idade : </label>
+      <input
+        required
+        placeholder="Idade"
+        type="number"
+        name="idade"
+        id="idade"
+      />
+      <br />
+      <label for="email">Email : </label>
+      <input placeholder="email" type="email" name="email" id="email" />
+      <br />
+      <label for="sexo">Sexo : </label>
+      <input type="radio" name="sexo" id="sexo" value="Masculino" />
+      <label for="sexo">Masculino</label>
+      <input type="radio" name="sexo" id="sexo" value="Feminino" />
+      <label for="sexo">Femenino</label>
+      <input type="radio" name="sexo" id="sexo" value="Outro" />
+      <label for="sexo">Outro</label>
+      <br />
+      <input type="checkbox" name="termos" id="termos" />
+      <label for="termos">Aceito os termos do serviço</label>
+      <br />
+      <label for="profissao"></label>
+      <select name="profissao" id="profissao">
+        <option value="Professor">Professor</option>
+        <option value="Dentista">Dentista</option>
+        <option value="Pedreiro">Pedreiro</option>
+      </select>
+      <br />
+      <input type="button" value="Enviar" />
+      <br />
+      <input type="submit" value="Enviar" />
+      <br />
+      <button>Enviar</button>
+    </form>
+    <p id="paragrafo">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit delectus
+      beatae voluptas.
+    </p>
+  </body>
+</html>

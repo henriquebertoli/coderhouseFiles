@@ -1,0 +1,29 @@
+/*Pseudo-Classe validacao*/
+#profissao option:checked {
+  color: rgb(252, 248, 6);
+  background-color: rgb(0, 17, 255);
+}
+#profissao option:checked {
+  color: red;
+  background-color: rgb(129, 188, 236);
+}
+
+/*Pseudo-Classe validacao :disable*/
+
+#idade:disabled {
+  background-color: rgb(245, 11, 11);
+}
+
+#email:valid {
+  color: greenyellow;
+}
+
+#email:invalid {
+  color: red;
+}
+
+#paragrafo ::before {
+  content: "Praticando PseudoElemento before";
+  color: white;
+  background-color: black;
+}

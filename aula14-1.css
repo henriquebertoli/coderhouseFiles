@@ -1,0 +1,44 @@
+#grade {
+   display: grid;
+  grid-template-areas:
+    "nav header header"
+    "nav section article"
+    "footer section article";
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+section {
+  grid-area: section;
+}
+
+footer {
+  grid-area: footer;
+}
+
+#artigo1 {
+  grid-area: article;
+}
+
+#artigo2 {
+  grid-area: article;
+}
+
+#artigos{
+    display: grid;
+    grid-template-areas: 
+    ;
+
+}

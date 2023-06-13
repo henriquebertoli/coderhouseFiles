@@ -1,0 +1,37 @@
+.pai {
+  width: 400px;
+  background-color: blueviolet;
+  border: 5px solid red;
+  display: flex;
+  flex-direction: column-reverse;
+  /*flex-wrap: no wrap; /*Os elementos se ajustam,
+   para caberem na div pai*/
+}
+
+.filho {
+  height: 100px;
+  width: 100px;
+  border: 2px dotted;
+  text-align: center;
+  margin: 10px;
+}
+
+.fundoAquamarine {
+  background-color: aquamarine;
+}
+
+#filho2 {
+  background-color: rgb(103, 84, 84);
+}
+
+#filho3 {
+  background-color: rgb(255, 127, 244);
+}
+
+#filho4 {
+  background-color: yellow;
+}
+
+#filho5 {
+  background-color: #f808d0;
+}

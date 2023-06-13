@@ -1,0 +1,95 @@
+#caixa1 {
+  background: linear-gradient(tan, red, teal);
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 4s; /*Aqui determinamos o tempo e quais objetos vamos transformar*/
+}
+/*Aqui determinamos o evento, e o que vai se transformar*/
+#caixa1:hover {
+  width: 400px;
+}
+
+#caixa2 {
+  background: linear-gradient(
+    rgb(210, 140, 179),
+    rgb(0, 174, 255),
+    rgb(240, 216, 6)
+  );
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 3s;
+}
+#caixa2:hover {
+  height: 300px;
+}
+
+#caixa3 {
+  background: linear-gradient(tan, rgb(68, 0, 255), teal);
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#caixa3:hover {
+  background: linear-gradient(rgb(10, 6, 0), rgb(100, 100, 100), #ffff);
+}
+
+#caixa4 {
+  background: linear-gradient(rgb(240, 138, 6), rgb(235, 11, 11), rgb(8, 8, 8));
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 3s;
+}
+#caixa4:hover {
+  transform: rotateZ(60deg);
+}
+
+#caixa5 {
+  background: linear-gradient(tan, rgb(238, 255, 0), rgb(9, 70, 240));
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 3s;
+}
+/*Nessa transicao o objeto dimensiona em diferentes angulos qdo passamos 
+o ponteiro do mouse*/
+#caixa5:hover {
+  transform: skew(60deg, 45deg);
+}
+/*Animacao*/
+.caixa6 {
+  background: linear-gradient(45deg, blue, black, purple);
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  animation-duration: 2s;
+  animation-name: animacao;
+  animation-iteration-count: infinite;
+}
+@keyframes animacao {
+  0% {
+    color: black;
+    opacity: 0;
+  }
+  100% {
+    color: aqua;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,16 @@
+* {
+  background-color: darkgrey;
+}
+.desafio1 {
+  color: orange;
+}
+
+#lista1 {
+  color: #119fe0;
+  list-style-type: circle;
+}
+
+#lista2 {
+  color: #7de9ff;
+  list-style-type: lower-roman;
+}
