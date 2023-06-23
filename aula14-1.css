@@ -1,44 +1,49 @@
 #grade {
-   display: grid;
+  background-color: rgb(205, 205, 221);
+  display: grid;
+  gap: 5px;
+
   grid-template-areas:
-    "nav header header"
-    "nav section article"
-    "footer section article";
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 100px 100px 100px;
+    "nav header header header"
+    "nav section section publi"
+    "footer section section mkt";
+  /**/
+  grid-template-columns: repeat(5, 1fr);
+
+  grid-template-rows: repeat(4, 100px);
 }
 
 .border {
-  border: 1px solid black;
+  border: 1px solid rgb(221, 15, 15);
+  border-radius: 5px;
 }
 
-header {
+#header {
   grid-area: header;
+  background-color: lightskyblue;
 }
 
-nav {
+#nav {
   grid-area: nav;
+  background-color: rgb(12, 160, 123);
 }
 
-section {
+#section {
   grid-area: section;
+  background-color: rgb(126, 36, 25);
 }
 
-footer {
+#footer {
   grid-area: footer;
+  background-color: rgb(204, 6, 115);
 }
 
-#artigo1 {
-  grid-area: article;
+#publi {
+  grid-area: publi;
+  background-color: rgb(26, 68, 58);
 }
 
-#artigo2 {
-  grid-area: article;
-}
-
-#artigos{
-    display: grid;
-    grid-template-areas: 
-    ;
-
+#mkt {
+  grid-area: mkt;
+  background-color: rgb(61, 54, 53);
 }

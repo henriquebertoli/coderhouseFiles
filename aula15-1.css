@@ -1,0 +1,69 @@
+.container {
+  border: 1px solid black;
+  /*background-color: lightgray;*/
+  border-radius: 3px;
+  display: grid;
+  /*gap: 5px;*/
+  grid-template-areas: "header" "descript" "sign-up" "feature1" "feature2" "feature3";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.design {
+  border-radius: 3px;
+  border: 2px solid pink;
+}
+
+.header {
+  background-color: red;
+  grid-area: header;
+}
+
+.descript {
+  background-color: aqua;
+  grid-area: descript;
+}
+
+.sign-up {
+  background-color: teal;
+  grid-area: sign-up;
+}
+
+.feature1 {
+  background-color: goldenrod;
+  grid-area: feature1;
+}
+
+.feature2 {
+  background-color: orangered;
+  grid-area: feature2;
+}
+
+.feature3 {
+  background-color: rgb(32, 218, 187);
+  grid-area: feature3;
+}
+
+@media only screen and (min-width: 769px) {
+  .container {
+    grid-template-areas:
+      "header header"
+      "descript descript"
+      "sign-up feature1"
+      "feature2 feature3";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    grid-template-areas:
+      "header header header"
+      "feature1 feature2 feature3"
+      "sign-up sign-up sign-up"
+      "descript descript descript";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 25%);
+  }
+}

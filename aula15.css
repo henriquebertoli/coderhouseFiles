@@ -1,0 +1,48 @@
+.grade {
+  border: 2px solid black;
+  color: azure;
+  border-radius: 5px;
+ /* background-color: rgb(205, 205, 221); */
+  padding: 5px;
+  justify-content: center;
+  display: grid;
+  gap: 3px;
+  grid-template-areas:
+    "box1"
+    "box2"
+    "box3";
+  grid-template-columns: 100%;
+}
+
+.border {
+  border: 1px solid rgb(16, 22, 27);
+  border-radius: 5px;
+}
+
+#box1 {
+  grid-area: box1;
+  background-color: lightskyblue;
+}
+
+#box2 {
+  grid-area: box2;
+  background-color: rgb(27, 65, 114);
+}
+
+#box3 {
+  grid-area: box3;
+  background-color: rgb(25, 57, 126);
+}
+
+/*Sintaxe de Media Query
+max width = Toda tela que for menor que 500px vai fazer isso...*/
+@media only screen and (min-width: 768px) {
+  .grade {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "box1 box1 box1 box1 box1"
+      "box2 box2 box2 box3 box3"
+      "box2 box2 box2 box3 box3";
+  }
+}
